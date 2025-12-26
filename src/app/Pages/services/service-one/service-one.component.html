@@ -104,7 +104,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="../../it/index.html" class="mil-logo">RABM</a>
+                <a href="/" class="mil-logo">RABM</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -146,9 +146,14 @@
                                 Real <span class="mil-thin">Estate</span><br>
                                 Buying & <span class="mil-thin">Selling</span>
                             </h1>
-                            <a href="#service" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
-                                <span>Learn more</span>
-                            </a>
+                           <button
+  class="mil-link mil-dark mil-arrow-place mil-down-arrow"
+  style="border: none;background: none"
+  (click)="scrollToService()"
+>
+  <span>Learn more</span>
+                        </button>
+
                         </div>
                     </div>
                 </div>
@@ -377,7 +382,7 @@
 
                             <!-- Service B -->
                             <div class="col-lg-4">
-                                <a href="../property-management/index.html"
+                                <a routerLink="/service-one"
                                     class="mil-service-card-lg mil-other-card mil-more mil-mb-30">
                                     <h4 class="mil-up mil-mb-30">
                                         Property <br>Management
@@ -400,7 +405,7 @@
 
                             <!-- Service C -->
                             <div class="col-lg-4">
-                                <a href="../media-representation/index.html"
+                                <a routerLink="/service-two"
                                     class="mil-service-card-lg mil-other-card mil-more mil-mb-30">
                                     <h4 class="mil-up mil-mb-30">
                                         Media <br>Representation
@@ -423,7 +428,7 @@
 
                             <!-- Service D -->
                             <div class="col-lg-4">
-                                <a href="../residents-management/index.html"
+                                <a routerLink="/service-three"
                                     class="mil-service-card-lg mil-other-card mil-more mil-mb-30">
                                     <h4 class="mil-up mil-mb-30">
                                         Residents <br>Property Management

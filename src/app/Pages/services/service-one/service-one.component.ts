@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-service-one',
@@ -11,6 +12,11 @@ export class ServiceOneComponent {
 
   dropdownOpen = false;
 
+   constructor(private viewportScroller: ViewportScroller) {}
+
+  scrollToService() {
+    this.viewportScroller.scrollToAnchor('service');
+  }
 toggleDropdown(event: Event) {
   event.preventDefault(); // Prevent Angular router from activating
   this.dropdownOpen = !this.dropdownOpen;
