@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
-import { HeaderComponent } from "../../Common/header/header.component";
+import { ViewEncapsulation, AfterViewInit, Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent],
+  imports: [RouterLink],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
+  encapsulation: ViewEncapsulation.None
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
+ngAfterViewInit(): void {
+    const reloaded = sessionStorage.getItem('httrack_fixed');
 
+    if (!reloaded) {
+      sessionStorage.setItem('httrack_fixed', 'true');
+      setTimeout(() => {
+        window.location.reload();
+      }, 100);
+    }
+  }
 }

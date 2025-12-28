@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
@@ -8,6 +9,13 @@ import { RouterLink } from '@angular/router';
   styleUrl: './service-two.component.css'
 })
 export class ServiceTwoComponent {
+
+    constructor(private viewportScroller: ViewportScroller) {}
+
+    
+    scrollToService() {
+    this.viewportScroller.scrollToAnchor('service');
+  }
 
   dropdownOpen = false;
 

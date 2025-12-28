@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
@@ -9,7 +10,14 @@ import { RouterLink } from '@angular/router';
 })
 export class ServiceFourComponent {
 
+    constructor(private viewportScroller: ViewportScroller) {}
+
+    
   dropdownOpen = false;
+
+    scrollToService() {
+    this.viewportScroller.scrollToAnchor('service');
+  }
 
 toggleDropdown(event: Event) {
   event.preventDefault(); // Prevent Angular router from activating

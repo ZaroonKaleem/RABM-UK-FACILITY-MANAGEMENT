@@ -65,23 +65,20 @@
                                     <li class="mil-has-children">
     <a [routerLink]="[]" (click)="toggleDropdown($event)">Services</a>
     <ul style="list-style-type: disc;">
-        <li class="">
-            <a routerLink="/service-one">Buying & selling of own real estate</a>
+         <li class="mil-active">
+            <a routerLink="/service-one/index.html">Buying & selling of own real estate</a>
         </li>
         <li class="">
-            <a routerLink="/service-two">Property management on a fee or contract basis</a>
-        </li>
-        <li class="mil-active">
-            <a routerLink="/service-three">Media representation for brands & property</a>
+            <a routerLink="/service-two/index.html">Property management on a fee or contract basis</a>
         </li>
         <li class="">
-            <a routerLink="/service-four">Residents property management</a>
+            <a routerLink="/service-three/index.html">Media representation for brands & property</a>
+        </li>
+        <li class="">
+            <a routerLink="/service-four/index.html">Residents property management</a>
         </li>
     </ul>
 </li>
-                                    <li class="">
-                                        <a href="portfolio/index.html">Portfolio</a>
-                                    </li>
                                     <li class="">
                                         <a href="contact/index.html">Contact</a>
                                     </li>
@@ -147,9 +144,13 @@
                                 Services <span class="mil-thin"></span>
                             </h1>
 
-                            <a href="#service" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
-                                <span>Learn more</span>
-                            </a>
+                                            <button
+  class="mil-link mil-dark mil-arrow-place mil-down-arrow"
+  style="border: none;background: none"
+  (click)="scrollToService()"
+>
+  <span>Learn more</span>
+  </button>
                         </div>
                     </div>
                 </div>
