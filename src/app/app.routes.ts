@@ -18,20 +18,25 @@ export const routes: Routes = [
     path: 'contact',
     component: ContactComponent
   },
+  { path: 'service-one', redirectTo: 'buying-and-selling-of-own-real-estate', pathMatch: 'full' },
+  { path: 'service-two', redirectTo: 'management-of-real-estate-on-fee-or-contract-basis', pathMatch: 'full' },
+  { path: 'service-three', redirectTo: 'media-representation-for-brands-and-property', pathMatch: 'full' },
+  { path: 'service-four', redirectTo: 'residents-property-management', pathMatch: 'full' },
+
   {
-    path: 'service-one',
+    path: 'buying-and-selling-of-own-real-estate',
     component: ServiceOneComponent
   },
   {
-    path: 'service-two',
+    path: 'management-of-real-estate-on-fee-or-contract-basis',
     component: ServiceTwoComponent
   },
   {
-    path: 'service-three',
+    path: 'media-representation-for-brands-and-property',
     component: ServiceThreeComponent
   },
   {
-    path: 'service-four',
+    path: 'residents-property-management',
     component: ServiceFourComponent
   },
 //   {

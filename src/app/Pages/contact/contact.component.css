@@ -1,0 +1,4 @@
+.mi-invert-fix img {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}

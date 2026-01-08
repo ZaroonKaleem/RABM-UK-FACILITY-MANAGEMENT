@@ -1,0 +1,29 @@
+
+
+.mi-invert-fix img {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+.mi-invert-fix {
+  /* margin-left: -50px !important; adjust if needed */
+}
+
+/* Direct image class */
+.no-invert {
+  filter: none !important;
+  -webkit-filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Also keep your existing rules */
+.mi-invert-fix img {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+@media (max-width: 991px) {
+  .mi-invert-fix {
+    margin-left: 0 !important;
+  }
+}

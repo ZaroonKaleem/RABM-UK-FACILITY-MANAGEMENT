@@ -46,7 +46,10 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">RABM</a>
+                <!-- <a href="index.html" class="mil-logo">RABM</a> -->
+                               <div class="mi-invert-fix">
+                    <img src="../../../assets/img/logo.jpeg" alt="logo" width="100">
+</div>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -65,7 +68,7 @@
                                      <li class="mil-has-children">
     <a [routerLink]="[]" (click)="toggleDropdown($event)">Services</a>
     <ul style="list-style-type: disc;">
-          <li class="mil-active">
+          <li class="">
             <a routerLink="/service-one/index.html">Buying & selling of own real estate</a>
         </li>
         <li class="">
@@ -74,7 +77,7 @@
         <li class="">
             <a routerLink="/service-three/index.html">Media representation for brands & property</a>
         </li>
-        <li class="">
+        <li class="mil-active">
             <a routerLink="/service-four/index.html">Residents property management</a>
         </li>
     </ul>
@@ -101,7 +104,10 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="../../it/index.html" class="mil-logo">RABM</a>
+                <a href="/" class="mil-logo">RABM</a>
+                               <!-- <div class="mi-invert-fix">
+                    <img src="../../../assets/img/logo.jpeg" alt="logo" width="100">
+</div> -->
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -139,10 +145,19 @@
                                 <li><a href="../index.html">Services</a></li>
                                 <li><a href="index.html">Residents Property Management</a></li>
                             </ul>
+
+   <div class="hero-row">
                             <h1 class="mil-mb-60">
     Residents <span class="mil-thin">Property</span><br>
     Management <span class="mil-thin"></span>
 </h1>
+
+  <img
+    src="../../../../assets/img/residents-property-management.jpeg"
+    alt="Media Representation"
+    class="hero-image"
+  />
+</div>
 
 
                                             <button
@@ -168,7 +183,7 @@
     Management & <span class="mil-thin">Operations</span>
 </h4>
 
-<p class="mil-up mil-mb-30">
+<p class="mil-up mil-mb-30" style="text-align: justify;">
     We manage buildings and shared developments for owners and residents’ associations.
     Our work ensures smooth day-to-day operations, covering service charge budgeting,
     communal maintenance, repairs coordination, compliance with safety and fire regulations,
@@ -193,7 +208,7 @@
             </div>
         </div>
         <div class="mil-accordion-content">
-            <p class="mil-mb-30">
+            <p class="mil-mb-30" style="text-align: justify;">
                 We prepare and manage service charge budgets to ensure financial transparency and
                 efficient allocation of resources for the building’s communal operations.
             </p>
@@ -225,7 +240,7 @@
             </div>
         </div>
         <div class="mil-accordion-content">
-            <p class="mil-mb-30">
+            <p class="mil-mb-30" style="text-align: justify;">
                 We schedule and oversee repair works, liaising with contractors and service providers
                 to ensure timely and quality completion of tasks.
             </p>
@@ -241,7 +256,7 @@
             </div>
         </div>
         <div class="mil-accordion-content">
-            <p class="mil-mb-30">
+            <p class="mil-mb-30" style="text-align: justify;">
                 We ensure the property meets all legal, safety, and fire regulations, conducting
                 inspections and implementing required measures to protect residents and owners.
             </p>
@@ -257,7 +272,7 @@
             </div>
         </div>
         <div class="mil-accordion-content">
-            <p class="mil-mb-30">
+            <p class="mil-mb-30" style="text-align: justify;">
                 Maintaining clear and transparent communication with residents to address queries,
                 provide updates, and ensure everyone feels supported and informed.
             </p>
@@ -282,7 +297,7 @@
                     Management <span class="mil-thin">Approach</span><br>
                     Built for <span class="mil-thin">Efficiency</span>
                 </h2>
-                <p class="mil-light-soft mil-up mil-mb-120">
+                <p class="mil-light-soft mil-up mil-mb-120" style="text-align: justify;">
                     Each property and building is managed with careful planning, ensuring smooth operations,
                     compliance with regulations, and clear communication with residents and owners.
                 </p>
@@ -296,7 +311,7 @@
                     <h5 class="mil-muted mil-mb-30">Service Charge Budgeting</h5>
                 </div>
                 <div class="col-lg-4">
-                    <p class="mil-light-soft mil-mb-30">
+                    <p class="mil-light-soft mil-mb-30" style="text-align: justify;">
                         We prepare and manage service charge budgets to ensure transparent and efficient
                         allocation of resources for the property’s communal operations.
                     </p>
@@ -318,7 +333,7 @@
                     <h5 class="mil-muted mil-mb-30">Communal Area Maintenance</h5>
                 </div>
                 <div class="col-lg-4">
-                    <p class="mil-light-soft mil-mb-30">
+                    <p class="mil-light-soft mil-mb-30" style="text-align: justify;">
                         Day-to-day upkeep of shared spaces, including cleaning, landscaping, and general
                         maintenance to provide residents with a safe and pleasant environment.
                     </p>
@@ -340,7 +355,7 @@
                     <h5 class="mil-muted mil-mb-30">Repairs & Compliance</h5>
                 </div>
                 <div class="col-lg-4">
-                    <p class="mil-light-soft mil-mb-30">
+                    <p class="mil-light-soft mil-mb-30" style="text-align: justify;">
                         Coordination of repairs and works, ensuring compliance with safety, fire, and
                         regulatory standards, keeping residents and owners protected.
                     </p>
@@ -393,7 +408,7 @@
                     <h4 class="mil-up mil-mb-30">
                         Buying & <br> Selling
                     </h4>
-                    <p class="mil-descr mil-up mil-mb-30">
+                    <p class="mil-descr mil-up mil-mb-30" style="text-align: justify;">
                         Purchase and sale of residential and commercial properties for our own portfolio,
                         ensuring value-driven and reliable transactions.
                     </p>
@@ -469,21 +484,23 @@
 
                 <!-- footer -->
 
-                <footer class="mil-dark-bg">
+<footer class="mil-dark-bg">
                     <div class="mi-invert-fix">
                         <div class="container mil-p-120-60">
                             <div class="row justify-content-between">
                                 <div class="col-md-4 col-lg-4 mil-mb-60">
 
-                                    <div class="mil-muted mil-logo mil-up mil-mb-30">RABM</div>
+                                                                        <div class="mil-muted mil-logo mil-up mil-mb-30">
+                                        <img src="../../../assets/img/logo.jpeg" width="150" alt="">
+                                    </div>
+                                    <!-- <div class="mil-muted mil-logo mil-up mil-mb-30">RABM UK FACILITY MANAGEMENT CO. LTD</div> -->
 
-                                    <p class="mil-light-soft mil-up mil-mb-30">Subscribe to our newsletter:</p>
+                                    <!-- <p class="mil-light-soft mil-up mil-mb-30">Subscribe to our newsletter:</p> -->
 
-                                    <form class="mil-subscribe-form mil-up">
-                                        <input type="email" placeholder="Enter your email">
-                                        <button type="submit"
-                                            class="mil-button mil-icon-button-sm mil-arrow-place"></button>
-                                    </form>
+                                        <form class="mil-subscribe-form mil-up">
+                                            <input type="email" placeholder="Enter your email">
+                                            <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
+                                        </form>
                                     <!-- <h6 class="mil-muted mil-up mil-mb-30">Italy</h6>
 
                                     <p class="mil-light-soft mil-up">str. piangrande 7 | andora - sv <br />tax id
@@ -516,14 +533,12 @@
                                         <div class="col-md-6 col-lg-5">
 
                                             <ul class="mil-menu-list mil-up mil-mb-60">
-                                                <li><a href="services/seo/index.html" class="mil-light-soft">Privacy
-                                                        Policy</a></li>
+                                                <li><a href="services/seo/index.html" class="mil-light-soft">Privacy Policy</a></li>
                                                 <li><a href="services/marketing/index.html"
                                                         class="mil-light-soft">Portfolio</a></li>
                                                 <li><a href="services/web-development/index.html"
                                                         class="mil-light-soft">Contact</a></li>
-                                                <li><a href="services/ai/index.html" class="mil-light-soft">Byuing &
-                                                        Selling Real Estate</a></li>
+                                                <li><a href="services/ai/index.html" class="mil-light-soft">Byuing & Selling Real Estate</a></li>
                                                 <!-- <li><a href="services/index.html" class="mil-light-soft">All
                                                         services</a></li> -->
                                             </ul>
@@ -565,7 +580,7 @@
                                                             class="far fa-circle"></i></a></li>
                                             </ul>
                                         </div> -->
-                                        <p class="mil-light-soft mil-up">© Copyright 2025 - RABM All Rights Reserved. <a
+                                        <p class="mil-light-soft mil-up">© Copyright 2026 - RABM All Rights Reserved. <a
                                                 href="http://www.iubenda.com/privacy-policy/32296775/legal"
                                                 rel="noopener" target="_blank" data-no-swup>Privacy policy</a>.</p>
                                         <!-- <p class="mil-light-soft mil-up"><a href="it/index.html" class="mil-light-soft"
